@@ -3,6 +3,11 @@
 // Load array of notes
 const data = require('./db/notes');
 
+// Simple In-Memory Database
+const data = require('./db/notes');
+const simDB = require('./db/simDB');  // <<== add this
+const notes = simDB.initialize(data);
+
 console.log('Hello Noteful!');
 
 const express = require('express');
