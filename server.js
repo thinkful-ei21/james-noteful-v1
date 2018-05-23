@@ -14,9 +14,9 @@ const app = express();
 
 const { PORT } = require('./config');
 
-app.use(express.static('public'));
-
 app.use(logger);
+
+app.use(express.static('public'));
 
 app.use(express.json());
 

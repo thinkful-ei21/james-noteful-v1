@@ -83,7 +83,6 @@ const noteful = (function () {
 
                 render();
             });
-
         });
     }
 
