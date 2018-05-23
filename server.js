@@ -8,13 +8,13 @@ const notes = simDB.initialize(data);
 console.log('Hello Noteful!');
 
 const express = require('express');
-const logger = require('./middleware/logger');
+const morgan = require('morgan');
 
 const app = express();
 
 const { PORT } = require('./config');
 
-app.use(logger);
+app.use(morgan('dev'));
 
 app.use(express.static('public'));
 
