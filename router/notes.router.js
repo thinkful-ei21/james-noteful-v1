@@ -15,6 +15,9 @@ router.get('/notes', (req, res, next) => {
         }
         res.json(list); // responds with filtered array
     });
+
+    // notes.filter(searchTerm)
+    //     .then(list
 });
 
 router.get('/notes/:id', (req, res, next) => {
