@@ -105,15 +105,6 @@ router.post('/notes', (req, res, next) => {
 router.delete('/notes/:id', (req, res, next) => {
     const id = req.params.id;
 
-    // notes.delete(id, (err, item) => {
-    //     if (err) {
-    //         return next(err);
-    //     } 
-    //     if (item) {
-    //         res.status(204).json(item);
-    //     }
-    // });
-
     notes.delete(id)
         .then(item => {
             if (item) {
